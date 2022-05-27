@@ -12,7 +12,8 @@ public class Server {
             System.out.println("Server started");
 
             DataInputStream inputStream;
-            try (Socket socket = server.accept()) {
+            Socket socket = server.accept();
+            try {
                 while(!socket.isInputShutdown()) {
                     InputStream socketInputStream = socket.getInputStream();
                     BufferedInputStream buffInputStream = new BufferedInputStream(socketInputStream);
@@ -23,6 +24,8 @@ public class Server {
             } catch (EOFException e) {
                 System.out.println("no more data");
             }
+            // close server socket
+            socket.close();
 
         } catch (IOException e) {
             throw new RuntimeException(e);
