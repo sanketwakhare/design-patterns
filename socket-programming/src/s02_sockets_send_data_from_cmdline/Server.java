@@ -21,12 +21,21 @@ public class Server {
         BufferedInputStream buffInputStream = new BufferedInputStream(socketInputStream);
         DataInputStream inputStream = new DataInputStream(buffInputStream);
 
+
+        // output stream to send data back to Client
+        OutputStream socketOutStream = socket.getOutputStream();
+        DataOutputStream outputStream = new DataOutputStream(socketOutStream);
+
         while (!socket.isInputShutdown()) {
             String data;
             try {
                 // read data and print
                 data = inputStream.readUTF();
-                System.out.println(data);
+                if(!"".equals(data)) {
+                    System.out.println(data);
+                    // send data to client
+                    outputStream.writeUTF(data.toUpperCase());
+                }
             } catch (EOFException e) {
                 // when end of file is reached
                 break;

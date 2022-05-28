@@ -1,9 +1,6 @@
 package s02_sockets_send_data_from_cmdline;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
@@ -20,6 +17,11 @@ public class Client {
         OutputStream socketOutStream = socket.getOutputStream();
         DataOutputStream outputStream = new DataOutputStream(socketOutStream);
 
+        // inputStream to read data from server
+        InputStream socketInputStream = socket.getInputStream();
+        BufferedInputStream buffInputStream = new BufferedInputStream(socketInputStream);
+        DataInputStream inputStream = new DataInputStream(buffInputStream);
+
         String line;
         while (true) {
             line = cmdInput.readLine();
@@ -28,7 +30,14 @@ public class Client {
                 outputStream.close();
                 break;
             } else {
+                // write data to server
                 outputStream.writeUTF(line);
+
+                // read data from server and print
+                String responseData = inputStream.readUTF();
+                if(!"".equals(responseData)) {
+                    System.out.println("server responded: "+responseData);
+                }
             }
         }
         // close connection
