@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/socket-programming.iml" filepath="$PROJECT_DIR$/socket-programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-design.iml" filepath="$PROJECT_DIR$/system-design.iml" />
     </modules>
   </component>
 </project>
