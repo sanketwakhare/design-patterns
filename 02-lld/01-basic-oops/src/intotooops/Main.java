@@ -1,4 +1,7 @@
-public class Driver {
+package intotooops;
+
+
+public class Main {
     public static void main(String[] args) {
         Student s1 = new Student();
         s1.setName("Sanket");
