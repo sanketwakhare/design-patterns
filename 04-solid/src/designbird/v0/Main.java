@@ -1,7 +1,5 @@
 package designbird.v0;
 
-import overriding.B;
-
 public class Main {
 
     public static void main(String[] args) {
