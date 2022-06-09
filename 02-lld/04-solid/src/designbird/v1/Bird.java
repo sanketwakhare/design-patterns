@@ -16,7 +16,7 @@ abstract public class Bird {
     private int size;
     private String beakType;
 
-    Bird(String type) {
+    public Bird(String type) {
         this.type = type;
     }
 
@@ -28,4 +28,39 @@ abstract public class Bird {
 
     abstract public void makeSound();
 
+    public String getType() {
+        return type;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public String getBeakType() {
+        return beakType;
+    }
+
+    public void setBeakType(String beakType) {
+        this.beakType = beakType;
+    }
 }

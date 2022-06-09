@@ -1,7 +1,7 @@
 package designbird.v1;
 
 public class Crow extends Bird {
-    Crow() {
+    public Crow() {
         super("crow");
     }
 

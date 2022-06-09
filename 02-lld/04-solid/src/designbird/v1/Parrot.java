@@ -1,7 +1,7 @@
 package designbird.v1;
 
 public class Parrot extends Bird {
-    Parrot() {
+    public Parrot() {
         super("parrot");
     }
 
