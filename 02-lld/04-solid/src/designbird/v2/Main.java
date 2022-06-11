@@ -3,18 +3,13 @@ package designbird.v2;
 public class Main {
 
     public static void main(String[] args) {
-        Parrot parrot = new Parrot();
-        parrot.eat();
-        parrot.fly();
+
+        Crow crow = new Crow();
+        crow.fly();
 
         Penguin penguin = new Penguin();
-        penguin.eat();
-        penguin.swim();
 
-        Duck duck = new Duck();
-        duck.eat();
-        duck.fly();
-        duck.swim();
-
+        Parrot parrot = new Parrot();
+        parrot.fly();
     }
 }

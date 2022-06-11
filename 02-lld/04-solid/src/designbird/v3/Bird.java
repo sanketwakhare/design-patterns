@@ -1,25 +1,17 @@
-package designbird.v2;
-
+package designbird.v3;
 
 /**
- * v2 design of class Bird
+ * v3 design of class Bird
  *
- * create FlyableBird and nonFlyableBird classes
+ * Provide only attributes for Bird class. Do no provide behaviors.
+ * The behaviors can be provided by interfaces so that different kind of birds can perform different behaviors
+ * follows SRP -> yes
+ * follows OCP -> yes as new type of Bird can have its own class, and it can implement the required behavior
+ * follows LSP (Liskov's Substitution Principle) -> yes as object of child is stored in variable of parent Bird. here type variable?
+ * follows ISP -> Interface Segregation Principle tells use to have minimum behaviors in single interfaces, ideally single method per interface. Functional interfaces follows this structure
+ *
  * <p>
- * <b>Problems :</b>
- * what if some birds can eat and some cannot eat ?
- * what if some birds can make sound and some cannot make sound ?
- * <p>
- * you will end up creating multiple classes
- * e.g. below 8 classes are required to support the behaviour. this problem is called <b>class explosion</b>
- * FlyableEatableSoundMakerBird
- * FlyableEatableNonSoundMakerBird
- * FlyableNonEatableSoundMakerBird
- * FlyableNonEatableNonSoundMakerBird
- * NonFlyableEatableSoundMakerBird
- * NonFlyableEatableNonSoundMakerBird
- * NonFlyableNonEatableSoundMakerBird
- * NonFlyableNonEatableNonSoundMakerBird
+ * Problems: 2 birds can fly the similar way and can eat similar way, in that case there would be code duplication
  */
 public abstract class Bird {
 

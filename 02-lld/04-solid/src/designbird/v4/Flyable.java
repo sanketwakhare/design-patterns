@@ -1,4 +1,4 @@
-package designbird.v2;
+package designbird.v4;
 
 public interface Flyable {
     void fly();

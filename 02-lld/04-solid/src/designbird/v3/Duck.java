@@ -1,4 +1,4 @@
-package designbird.v2;
+package designbird.v3;
 
 public class Duck extends Bird implements Eatable, Flyable, Swimmable {
 
