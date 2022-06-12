@@ -12,6 +12,6 @@ public class Parrot extends Bird {
 
     @Override
     public void makeSound() {
-        System.out.println("mithuu..");
+        System.out.println("whistles and squawk");
     }
 }

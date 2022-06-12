@@ -24,7 +24,7 @@ public class Bird {
         if ("crow".equalsIgnoreCase(type)) {
             System.out.println("crow is flying");
         } else if ("parrot".equalsIgnoreCase(type)) {
-            System.out.println("parrot is flying high");
+            System.out.println("parrot is flying");
         }
     }
 
@@ -34,9 +34,9 @@ public class Bird {
 
     public void makeSound() {
         if ("crow".equalsIgnoreCase(type)) {
-            System.out.println("craww...");
+            System.out.println("kra-kra-kra");
         } else if ("parrot".equalsIgnoreCase(type)) {
-            System.out.println("mithuuu...");
+            System.out.println("whistles and squawk");
         }
     }
 

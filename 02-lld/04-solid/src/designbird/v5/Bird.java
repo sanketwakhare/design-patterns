@@ -6,8 +6,8 @@ package designbird.v5;
  * follows OCP -> open for extension and closed for modifications
  * follows LSP -> future types can be easily substituted with another object without any changes in existing classes
  * follows ISP -> each interface is functional interface
- * follows DI -> Dependency Inversion -> as dependency between 2 concrete classes is via interface
- * Dependency os one concrete class is injected via constructor
+ * follows DI -> Dependency Inversion -> as dependency between 2 concrete classes is added via interface
+ * Dependency of one concrete class is injected via constructor
  */
 public abstract class Bird {
 

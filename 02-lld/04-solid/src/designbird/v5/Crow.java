@@ -17,6 +17,6 @@ public class Crow extends Bird implements Flyable ,Eatable, SoundMaker {
 
     @Override
     public void makeSound() {
-        System.out.println("kraa");
+        System.out.println("kra-kra-kra");
     }
 }

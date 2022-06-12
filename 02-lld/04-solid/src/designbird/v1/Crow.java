@@ -12,6 +12,6 @@ public class Crow extends Bird {
 
     @Override
     public void makeSound() {
-        System.out.println("craww...");
+        System.out.println("kra-kra-kra");
     }
 }
