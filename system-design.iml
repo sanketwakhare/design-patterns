@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/02-lld/03-oops/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02-lld/04-solid/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02-lld/06-singleton/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-lld/07-builder/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-lld/prototype/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
