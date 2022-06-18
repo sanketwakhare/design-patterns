@@ -2,12 +2,18 @@ package builder.v2;
 
 import java.security.InvalidParameterException;
 
+/**
+ * Use Builder pattern
+ * when it is required to create complex object
+ * when telescoping constructors are present
+ */
 public class UserExam {
     private int englishMarks;
     private int mathsMarks;
     private int scienceMarks;
     private String name;
 
+    // return builder object which takes care of validation and main object creation
     public static UserExamBuilder getBuilder() {
         return new UserExamBuilder();
     }
@@ -21,6 +27,7 @@ public class UserExam {
 
         public UserExamBuilder setEnglishMarks(int englishMarks) {
             this.englishMarks = englishMarks;
+            // method chaining
             return this;
         }
 
