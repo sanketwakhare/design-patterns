@@ -1,4 +1,4 @@
-package taxculculator.v1;
+package taxculculator.v1.base;
 
 public enum TaxRegime {
     OLD,
