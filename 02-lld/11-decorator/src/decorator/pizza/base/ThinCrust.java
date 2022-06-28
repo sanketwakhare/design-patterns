@@ -2,14 +2,27 @@ package decorator.pizza.base;
 
 import decorator.pizza.IBase;
 
-public class ThinCrust implements IBase {
+public class ThinCrust implements ICrust {
+
+    ICrust crust;
+
+    public ThinCrust() {
+    }
+
+    public ThinCrust(ICrust crust) {
+        this.crust = crust;
+    }
+
     @Override
     public double getCost() {
-        return 120;
+        if (crust == null) return 120;
+        return crust.getCost() + 120;
     }
 
     @Override
     public String getIngredients() {
-        return "ThinCrust";
+        String thinCrust = "ThinCrust";
+        if (crust == null) return thinCrust;
+        return crust.getIngredients() + "-" + thinCrust;
     }
 }

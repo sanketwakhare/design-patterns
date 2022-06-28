@@ -38,5 +38,13 @@ public class MainPizzaDecorator {
         System.out.println(chickenThickPizza.getCost());
         System.out.println("----------------------------");
 
+        // (Double Crust Pizza without sandwich)
+
+        // Cheese Crust + Thin Crust + Paneer Pizza
+        CheeseCrust cheeseThinCrust = new CheeseCrust(thinCrust);
+        PaneerTopping paneerCheeseThinCrustPizza = new PaneerTopping(cheeseThinCrust);
+        System.out.println(paneerCheeseThinCrustPizza.getIngredients());
+        System.out.println(paneerCheeseThinCrustPizza.getCost());
+        System.out.println("----------------------------");
     }
 }
