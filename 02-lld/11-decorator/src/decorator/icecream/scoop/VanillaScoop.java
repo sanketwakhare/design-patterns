@@ -4,7 +4,7 @@ import decorator.icecream.ICone;
 
 public class VanillaScoop implements ICone {
 
-    ICone baseCone;
+    private final ICone baseCone;
 
     public VanillaScoop(ICone baseCone) {
         this.baseCone = baseCone;
