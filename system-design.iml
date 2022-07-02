@@ -19,6 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/02-lld/10-adapter/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02-lld/11-decorator/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/02-lld/12-flyweight/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02-lld/13-strategy/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
