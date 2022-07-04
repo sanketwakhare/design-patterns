@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LowAltitudeFlyingBehavior lowAltitudeFlyingBehavior = new LowAltitudeFlyingBehavior();
-        HighAltitudeFlyingBehavior highAltitudeFlyingBehavior = new HighAltitudeFlyingBehavior();
+        FlyingBehavior lowAltitudeFlyingBehavior = new LowAltitudeFlyingBehavior();
+        FlyingBehavior highAltitudeFlyingBehavior = new HighAltitudeFlyingBehavior();
 
         Parrot parrot = new Parrot(lowAltitudeFlyingBehavior);
         parrot.fly();

@@ -1,5 +1,7 @@
 package designbird.v1;
 
+import lombok.Data;
+
 /**
  * v1 design of class Bird
  * follows SRP -> in this design, Bird is responsible for only shared attributes and shared behaviors
@@ -7,7 +9,10 @@ package designbird.v1;
  * <p>
  * Problems:
  * what happens when there is some type of Bird which cannot fly and can swim instead
+ * violated Lisklov's
  */
+
+@Data
 abstract public class Bird {
 
     private final String type;
@@ -28,39 +33,4 @@ abstract public class Bird {
 
     abstract public void makeSound();
 
-    public String getType() {
-        return type;
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    public String getBeakType() {
-        return beakType;
-    }
-
-    public void setBeakType(String beakType) {
-        this.beakType = beakType;
-    }
 }
