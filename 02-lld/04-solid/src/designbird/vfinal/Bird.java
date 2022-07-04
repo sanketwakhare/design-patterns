@@ -12,6 +12,9 @@ package designbird.vfinal;
 // Crows and sparrows fly in the same way
 // Every bird can eat and make sound
 
+import lombok.Data;
+
+@Data
 abstract public class Bird {
 
     // type of bird

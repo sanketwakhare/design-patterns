@@ -1,5 +1,7 @@
 package designbird.v5;
 
+import lombok.Data;
+
 /**
  * v5 design of class Bird
  * follow SRP -> Single Responsibility Principle
@@ -9,6 +11,8 @@ package designbird.v5;
  * follows DI -> Dependency Inversion -> as dependency between 2 concrete classes is added via interface
  * Dependency of one concrete class is injected via constructor
  */
+
+@Data
 public abstract class Bird {
 
     private String type;
@@ -19,45 +23,5 @@ public abstract class Bird {
 
     public Bird(String type) {
         this.type = type;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getWeight() {
-        return weight;
-    }
-
-    public void setWeight(String weight) {
-        this.weight = weight;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public String getBeakType() {
-        return beakType;
-    }
-
-    public void setBeakType(String beakType) {
-        this.beakType = beakType;
     }
 }
