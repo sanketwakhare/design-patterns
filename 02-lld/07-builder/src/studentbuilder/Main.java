@@ -11,7 +11,7 @@ public class Main {
 
         Student student2 = Student.getBuilder()
                 .setName("John Dow")
-                .setAddress("")
+                .setAddress("test")
                 .build();
         System.out.println("done");
     }

@@ -4,33 +4,34 @@ import java.security.InvalidParameterException;
 
 public class Student {
 
-    private String name;
-    private String address;
+    private final String name;
+    private final String address;
 
-    private Student() {
+    private Student(Builder builder) {
+        this.name = builder.name;
+        this.address = builder.address;
     }
 
     public static Builder getBuilder() {
         return new Builder();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 
     public static class Builder {
 
         private String name;
         private String address;
 
-        public String getName() {
-            return name;
-        }
-
         public Builder setName(String name) {
             this.name = name;
             return this;
-        }
-
-        public String getAddress() {
-            return address;
         }
 
         public Builder setAddress(String address) {
@@ -48,10 +49,7 @@ public class Student {
             }
 
             // object creation
-            Student student = new Student();
-            student.name = this.name;
-            student.address = this.address;
-            return student;
+            return new Student(this);
         }
     }
 }
