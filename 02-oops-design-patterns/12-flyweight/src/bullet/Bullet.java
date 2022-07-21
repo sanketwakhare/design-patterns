@@ -7,7 +7,7 @@ public class Bullet {
     private final String color;
     private final byte[] image;
 
-    private BulletType type;
+    private final BulletType type;
 
     public Bullet(double size, String color, byte[] image, BulletType type) {
         this.size = size;

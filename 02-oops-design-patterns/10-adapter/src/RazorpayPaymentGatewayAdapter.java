@@ -9,7 +9,7 @@ public class RazorpayPaymentGatewayAdapter implements PaymentGateway{
 
         String result = razorpayGateway.payViaCreditCard(ccNumber,
                 String.valueOf(cvv),
-                String.valueOf(expMonth) +"/" +String.valueOf(expYear));
+                expMonth +"/" + expYear);
 
         return Long.parseLong(result);
     }

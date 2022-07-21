@@ -4,7 +4,7 @@ import java.io.*;
 
 public class SingletonSerializedTest {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         SerializedSingleton instanceOne = SerializedSingleton.getInstance();
         ObjectOutput out = new ObjectOutputStream(new FileOutputStream(
                 "filename.ser"));
