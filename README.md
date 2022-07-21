@@ -1,2 +1,2 @@
-# system-design
-The System Design Practise
+# design-patterns
+Common Design Patterns Practise

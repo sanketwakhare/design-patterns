@@ -5,6 +5,8 @@ import sorting.strategies.MergeSort;
 import sorting.strategies.QuickSort;
 import sorting.strategies.SortingType;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
