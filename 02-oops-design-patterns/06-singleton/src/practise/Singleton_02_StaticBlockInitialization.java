@@ -1,5 +1,6 @@
 package practise;
 
+// similar to eager initialization but we can handle exceptions while object creation
 public class Singleton_02_StaticBlockInitialization {
     public static void main(String[] args) {
         Singleton_v2 instanceOne = Singleton_v2.getInstance();
