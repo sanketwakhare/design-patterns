@@ -13,6 +13,10 @@ public class UserExam {
     private int scienceMarks;
     private String name;
 
+    private UserExam() {
+
+    }
+
     // return builder object which takes care of validation and main object creation
     public static UserExamBuilder getBuilder() {
         return new UserExamBuilder();
