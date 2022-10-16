@@ -12,7 +12,7 @@ public class MangoScoop implements ICone {
 
     @Override
     public double getCost() {
-        return 60;
+        return baseCone.getCost() + 60;
     }
 
     @Override

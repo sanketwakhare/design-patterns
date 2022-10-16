@@ -12,7 +12,7 @@ public class VanillaScoop implements ICone {
 
     @Override
     public double getCost() {
-        return 30;
+        return baseCone.getCost() + 30;
     }
 
     @Override

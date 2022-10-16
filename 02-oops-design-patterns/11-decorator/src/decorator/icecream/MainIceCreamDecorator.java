@@ -20,7 +20,7 @@ public class MainIceCreamDecorator {
         ChocolateScoop chocolateScoop = new ChocolateScoop(chocolateCone);
         System.out.println(chocolateScoop.getConstituents() + " " + chocolateScoop.getCost());
 
-        // vanilla cone + vanilla scoop +chocolate scoop
+        // vanilla cone + vanilla scoop + chocolate scoop
         ChocolateScoop vanillaChocolate = new ChocolateScoop(vanillaScoop);
         System.out.println(vanillaChocolate.getConstituents() + " " + vanillaChocolate.getCost());
 
