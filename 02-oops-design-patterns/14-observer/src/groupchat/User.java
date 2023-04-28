@@ -29,12 +29,12 @@ public class User {
     }
 
     public void listen(String message) {
-        System.out.println("to " + this.id + " " + message);
+        System.out.println("to(" + this.id + ") " + message);
     }
 
     public void sendMessage(String message, Group group) {
         if (group != null && groups.contains(group)) {
-            group.notify("from " + this.id + ": " + message);
+            group.notify(message, this);
         }
     }
 }

@@ -25,9 +25,11 @@ public class Group {
         users.remove(user);
     }
 
-    public void notify(String message) {
+    public void notify(String message, User producer) {
         for (User user : users) {
-            user.listen(message);
+            if (user != producer) {
+                user.listen("from(" + producer.getId() + ") -> " + message);
+            }
         }
     }
 }
