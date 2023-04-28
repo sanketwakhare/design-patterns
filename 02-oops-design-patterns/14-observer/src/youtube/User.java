@@ -10,6 +10,6 @@ public class User implements Subscriber {
 
     @Override
     public void listen(EventType eventType, String message, String subjectName) {
-        System.out.println(this.id + ": " + message);
+        System.out.println(this.id + ": " + message+ ": from "+ subjectName);
     }
 }

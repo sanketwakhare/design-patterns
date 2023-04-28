@@ -2,5 +2,5 @@ package shapeprototype;
 
 public interface Cloneable<T> {
 
-    T clone();
+    T clone() throws CloneNotSupportedException;
 }
